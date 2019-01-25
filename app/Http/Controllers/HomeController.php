@@ -14,20 +14,27 @@ class HomeController extends Controller
     $data  = [[
       'title' => 'UX/ Ui design',
       'image' => 'diamond',
+      // 'price' => 0,
       'desc' => 'Be set fourth land god darkness make it wherein own'
     ], [
       'title' => 'web development',
       'image' => 'arc',
+      // 'price'=> 1,
       'desc' => "A she'd them bring void moving third she'd kind fill"
-    ],[
+    ],
+    [
       'title' => 'app / mobile',
       'image' => 'phone',
+      // 'price'=> 2,
       'desc' => "Dominion man second spirit he, earth they're creeping"
-    ], [
+    ], 
+    [
       'title' => 'game design',
       'image' => 'joy',
+      // 'price' => 0,
       'desc' => 'Morning his saying moveth it multiply appear life be'
-    ],[
+    ],
+    [
       'title' => 'SEO / marketing',
       'image' => 'plane',
       'desc' => "Give won't after land fill creeping meat you, may"
@@ -43,8 +50,13 @@ class HomeController extends Controller
       'title' => ' illustrations',
       'image' => 'paint-bucket',
       'desc' => "Whales likeness hath, man kind for them air two won't"
+    ], [
+      'title' => ' more',
+      'image' => 'paint-bucket',
+      'desc' => "Whales likeness hath, man kind for them air two won't"
     ]
   ];
+
     return view('pages.services')->with(['data' => $data]);
   }
 
